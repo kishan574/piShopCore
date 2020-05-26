@@ -1,0 +1,22 @@
+﻿body {
+    background-image: url('../Images/videoblocks-fresh-bread-on-the-wooden-table-different-bakery-bread-dolly-shot-top-view-slow-motion_bzqrojwre_thumbnail-full01.png');
+    padding-top: 50px;
+    padding-bottom: 25px;
+    background-repeat: repeat;
+    color: white;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cards {
+    margin-top: 30px;
+}
+
+.feedbac {
+    background-image: url("http://www.freebiesgallery.com/wp-content/uploads/2013/09/white-background-1.jpg");
+    height:100%;
+    width:100%;
+}

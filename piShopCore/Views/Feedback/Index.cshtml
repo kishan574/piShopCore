@@ -1,0 +1,35 @@
+﻿@model Feedback  
+
+    <form asp-action="Index" method="post" role="form" class="feedbac">
+       
+        <div class="form-group">
+            <label asp-for="Name" class="control-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email" class="control-label"></label>
+            <input type="email" asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Message" class="control-label"></label>
+            <textarea asp-for="Message" class="form-control"></textarea>
+            <span asp-validation-for="Message" class="text-danger"></span>
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ContactMe" class="control-label"></label>
+            <input type="checkbox" asp-for="ContactMe" class="form-check-label" />
+            <span asp-validation-for="ContactMe" class="text-danger"></span>
+
+        </div>
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Send Feedback" />
+        </div>
+    </form>

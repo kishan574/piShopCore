@@ -1,0 +1,29 @@
+﻿@model HomeViewModel
+
+@foreach (var pi in Model.Pies)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="card cards">
+
+            <div class="container-fluid">
+                <img class="card-img-top" src="@pi.ImgThumbnaiUrl"
+                     alt="@pi.Name"
+                     height="300"
+                     width="300"
+                     />
+            </div>
+
+            <div class="card-body">
+                <h3 class="card-title float-right"> @pi.Price.ToString("c") </h3>
+                <h3 class="card-title">
+                    <a asp-controller="Home" asp-action="Detail" asp-route-id="@pi.Id">
+                        @pi.Name
+                    </a>
+                </h3>
+                <p class="card-text">@pi.ShortDescription</p>
+            </div>
+        </div>
+    </div>
+
+}
+
